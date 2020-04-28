@@ -1,0 +1,86 @@
+FS1030 SQL Statements
+Nancy Bullis
+Student #205337878
+April 27, 2020
+Database njbws
+
+CREATE TABLE IF NOT EXISTS publications (
+id INT NOT NULL AUTO_INCREMENT,
+publication VARCHAR(300) NOT NULL DEFAULT’’,
+publisher VARCHAR (90) NOT NULL DEFAULT’’,
+type VARCHAR(50) NOT NULL DEFAULT’’,
+role VARCHAR(50) NOT NULL DEFAULT’’,
+PRIMARY KEY (id)
+);
+
+INSERT INTO publications VALUES
+('#', 'CFL Illustrated', 'ISPI', 'Game Day Programs', 'Editor'),
+('#', '(Toronto Maple)Leafs', 'ISPI','Game Day Programs', 'Editor'), 
+('#', '(Winnipeg) Jets Magazine', 'ISPI', 'Game Day Programs', 'Editor'),
+('#', 'The Royal (Winter Fair)', 'ISPI', 'Annual Event Guides', 'Editor'),
+('#', 'Ontario Place', 'ISPI', 'Site Guides', 'Editor'),
+('#', 'Ontario Place Forum', 'ISPI', 'Concert Guides', 'Editor'),
+('#', 'Canadas Wonderland', 'ISPI', 'Site Guides', 'Editor'),
+('#', 'LIVE at Kingswood Music Theatre', 'ISPI', 'Concert Guides', 'Editor'),
+('#', 'Canadian Business Compliance Guide', 'Rights Retained', 'Business Reference', 'Co-author'),
+('#', 'Family Trust Guide', 'CPA Canada', 'Client Book', 'Co-author'),
+('#', 'Model Agreements Resolutions Contracts', 'CPA Canada', 'Business Reference', 'Co-author'),
+('#', 'Personal Tax Planner Guide', 'CPA Canada', 'Client Book', 'Co-author'),
+('#', 'Professional Checklists Collection', 'CPA Canada', 'Business Reference', 'Co-author'),
+('#', 'Tax Risk Management Guide', 'CPA Canada', 'Tax Reference', 'Co-author'),
+('#', 'Tax Planning Using Family Trusts', 'CPA Canada', 'Self-Learning Course', 'Co-author'),
+('#', 'Planning for the End of Life', 'CPA Canada', 'Client Information', 'Contributor'),
+('#', 'Registered Charities Guide', 'Rights Retained', 'Client Information', 'Co-author'),
+('#', 'To Have and To Hold', 'McGraw-Hill Ryerson', 'Retail Reference', 'Co-author'),
+('#', 'The Eel Ladder', 'Watershed Books', 'Poetry', 'Poet'),
+('#', 'Time to Give Up on Henry', 'Lyrical Myrical Press', 'Short Prose/Poetry','Author');
+ 
+CREATE TABLE IF NOT EXISTS players (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR (50) NOT NULL DEFAULT’’,
+club VARCHAR (30) NOT NULL DEFAULT’’,
+position VARCHAR(15) NOT NULL DEFAULT’’,
+number INT NOT NULL,
+PRIMARY KEY (id)
+);
+
+INSERT INTO players VALUES
+('#', ‘Patrice Bergeron’, ‘Boston Bruins’, ‘Center’, ‘34’),
+('#', ‘Brad Marchand’, ‘Boston Bruins’, ‘Center’, ‘63’),
+('#', ‘Zdeno Chára’, ‘Boston Bruins’, ‘Left Winger’, ‘33’),
+('#', ‘Tuukka Rask’, ‘Boston Bruins’, ‘Goaltender’, ‘40’),
+('#', ‘Bobby Orr’, ‘Boston Bruins’, ‘Defence’, ‘4’);
+
+
+CREATE TABLE IF NOT EXISTS radio (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(20) NOT NULL DEFAULT'',
+work VARCHAR(200) NOT NULL DEFAULT’’,
+date DATE NOT NULL, 
+broadcast VARCHAR(50) NOT NULL DEFAULT’’,
+PRIMARY KEY (id)
+);
+INSERT INTO radio VALUES
+('#', ‘Keith Ross Leckie’, ‘Cursed! Blood of the Donnellys’, ’2020-01-14’, ‘New’),
+('#', ‘Tanis MacDonald’, ‘Mobile’, ’2020-01-14’, ‘New’),
+('#', ‘Joanna Skibssrud’, ‘The Island’, ’2020-01-14’, ‘New'),
+('#', ‘Desmond Cole’, ‘The Skin We are In’, ’2020-01-28’, ‘New’),
+('#', ‘Robyn Doolittle’, ‘Had It Coming’, ’2020-01-28’, ‘New’),
+('#', ‘Mark Bourrie’, ‘Bush Runner’, ’2020-01-28’, ‘New'),
+('#', ‘Guest Host Dwayne Morgan’, ‘In Honour of Black History Month’, ’2020-02-11’, ‘New’), 
+('#', ‘Randell Adjei’, ‘In HonoUPDur of Black History Month’, ’2020-02-11’, ‘New’),
+('#', ‘Ziya Tong’, ‘The Reality Bubble’, ’2020-02-25’, ‘New’),
+('#', ‘Jessica McDiarmid’, ‘The Highway of Tears’, ’2020-02-25’, ‘New’),
+('#', ‘Timothy C. Winegard’, ‘The Mosquito’, ’2020-02-25’, ‘New’),
+('#', ‘Stan Rogal’, ‘Investigation into the Death of Roberto Bolano’, ‘2020-03-10’, ‘New’),
+('#', ‘Richard Harrison’, ’25 - Hockey Poems & Revised’, ‘2020-03-10’, ‘New’),
+('#', ‘Ian Williams’, ‘Reproduction’, ’2020-03-24’, ‘Repeat’),
+('#', ‘S Cooper’, ‘Smells Like Heaven’, ’2020-03-24’, ‘Repeat’),
+('#', ‘L De Nikolits ’, ‘Rotten Peaches’, ’2020-03-24’, ‘Repeat’),
+('#', ‘Desmond Cole’, ‘The Skin We Are In’, ’2020-04-07’, ‘Repeat’),
+('#', ‘Robyn Doolittle’, ‘Had It Coming’, ’2020-04-07’, ‘Repeat’),
+('#', ‘Mark Bourrie’, ‘Bush Runner - Pierre-Esprit Radisson’, ’2020-04-07’, ‘Repeat’),
+('#', ‘Stan Rogal’, ‘Investigation into the Death of Roberto Bolaño’, ‘2020-04-21’, ‘Repeat’),
+('#', ‘Richard Harrison’, ’25 - Hockey Poems & Revised’, ‘2020-04-21’, ‘Repeat’);
+
+
